@@ -20,5 +20,4 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: $AWS_REGION
   bucket: serverless-unsj
-  local_dir: _site
   acl: public_read
