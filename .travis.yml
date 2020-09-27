@@ -10,7 +10,8 @@ before_install:
 - sudo apt-get -qq update
 - sudo pip install awscli
 script:
-- sudo bundle exec jekyll build
+- cd ..
+- bundle exec jekyll build
 deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
