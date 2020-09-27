@@ -8,9 +8,9 @@ branches:
 before_install:
 - sudo gem install bundler
 - sudo apt-get -qq update
-- sudo pip install awscli
+- sudo pip3 install awscli
 script:
-- bundle exec jekyll build
+- sudo bundle exec jekyll build
 deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
