@@ -6,7 +6,7 @@ branches:
   only:
   - master
 before_install:
-- gem install bundler
+- sudo gem install bundler
 - sudo apt-get -qq update
 - sudo pip install awscli
 script:
