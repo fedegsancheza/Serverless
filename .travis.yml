@@ -13,11 +13,9 @@ script:
 - cd ..
 - bundle exec jekyll build
 deploy:
-  skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  keep_history: true
   provider: s3
-  skip_cleanup: true
+  cleanup: true
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   region: $AWS_REGION
