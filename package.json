@@ -1,0 +1,19 @@
+{
+  "name": "serverless",
+  "version": "0.0.1",
+  "description": "",
+  "main": "myJavascript.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedegsancheza/Serverless.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedegsancheza/Serverless/issues"
+  },
+  "homepage": "https://github.com/fedegsancheza/Serverless#readme"
+}
