@@ -6,9 +6,9 @@ branches:
   only:
   - master
 before_install:
-- sudo gem install bundler
 - sudo apt-get -qq update
 - sudo pip install awscli
+- sudo gem install bundler
 script:
 - cd ..
 - bundle exec jekyll build
