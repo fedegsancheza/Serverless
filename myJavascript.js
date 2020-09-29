@@ -1,3 +1,3 @@
 function inform(){
-    alert("Hola 2")
+    alert("Hola nuevo")
 }
