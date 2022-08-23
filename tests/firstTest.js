@@ -1,8 +1,16 @@
 module.exports = {
-    'My first test case'(browser) {
+    'Prueba Suma Calculadora'(browser) {
+        const mainQueryInputSelector = 'name="query"';
+	const mainQuery = '2+2'
+	var firstPageUrl = "";
         browser
-            .url('https://news.ycombinator.com/')
-            .waitForElementVisible('.hnname')
-            .assert.containsText('.hnname', 'Hacker News');
+		.url(function(result) {
+  						// return the current url
+  						firstPageUrl = result.value;
+  						module.exports.firstPageUrl;
+		});
+		.setValue(mainQueryInputSelector, mainQuery)
+		.saveScreenshot('test_output/archivo.png');
+		.assert.containsText(mainQueryInputSelector, '4')
     }
 };
