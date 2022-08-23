@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - 17
 services:
-  -xvfb
+  - xvfb
 script: 
-  -xvfb-run npm test
+  - xvfb-run npm test
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
