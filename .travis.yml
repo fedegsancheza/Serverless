@@ -5,6 +5,10 @@ services:
   - xvfb
 script: 
   - xvfb-run -a npm test
+addons: 
+  chrome: stable
+before_install:
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
