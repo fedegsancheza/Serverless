@@ -1,6 +1,6 @@
 module.exports = {
     'Prueba Suma Calculadora'(browser) {
-        const mainQueryInputSelector = 'name="query"';
+        const mainQueryInputSelector = 'input[id="query"]';
 	const mainQueryButton = 'name="test"';
 	const mainQuery = '2+2'
 	var firstPageUrl = "";
