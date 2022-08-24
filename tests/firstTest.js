@@ -10,9 +10,9 @@ module.exports = {
   						firstPageUrl = result.value;
   						module.exports.firstPageUrl;
 		});
-		.setValue(mainQueryInputSelector,mainQuery);
-	    	.click(mainQueryButton);
-		.saveScreenshot('test_output/archivo.png');
-		.assert.containsText(mainQueryInputSelector, '4');
+		browser.setValue(mainQueryInputSelector,mainQuery)
+	    	browser.click(mainQueryButton)
+		browser.saveScreenshot('test_output/archivo.png')
+		browser.assert.containsText(mainQueryInputSelector, '4')
     }
 };
