@@ -7,10 +7,12 @@ module.exports = {
         browser
 		.url(function(result) {
   						// return the current url
-						console.log(result);
+						console.log(result);console.log("Hola");}
+		    				
   						//firstPageUrl = result.value;
   						//module.exports.firstPageUrl;
 		});
+	    	console.log(
 	    	browser.saveScreenshot('./tests/archivo.png')
 	    	browser.waitForElementVisible('input[id="resultado"]',20000)
 		browser.setValue(mainQueryInputSelector,mainQuery)
