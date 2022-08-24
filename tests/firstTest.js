@@ -11,7 +11,7 @@ module.exports = {
   						//firstPageUrl = result.value;
   						//module.exports.firstPageUrl;
 		});
-	    	browser.saveScreenshot('/test_output/archivo.png')
+	    	browser.saveScreenshot('./tests/archivo.png')
 	    	browser.waitForElementVisible('input[id="resultado"]',20000)
 		browser.setValue(mainQueryInputSelector,mainQuery)
 	    	browser.click(mainQueryButton)
