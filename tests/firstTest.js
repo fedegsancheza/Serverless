@@ -1,7 +1,11 @@
 module.exports = {
     'Prueba Suma Calculadora'(browser) {
-        const mainQueryInputSelector = 'input[name="query"]';
+        //const mainQueryInputSelector = 'input[name="query"]';
 	//const mainQueryInputSelector = 'input[name="test"]';
+	const mainQueryInputSelector = element({
+		selector: 'input[name="query"]',
+		index: 0
+	});
 	const mainQueryButton = 'input[name="test"]';
 	const mainQuery = '2+2'
 	var firstPageUrl = "";
@@ -16,7 +20,7 @@ module.exports = {
   						//module.exports.firstPageUrl;
 		//});
 	    	browser.saveScreenshot('./tests/archivo.png')
-	    	browser.waitForElementPresent('button[name="test"]',20000)
+	    	//browser.waitForElementPresent('button[name="test"]',20000)
 		browser.setValue(mainQueryInputSelector,mainQuery)
 	    	browser.click(mainQueryButton)
 		browser.assert.containsText(mainQueryInputSelector, '4')
