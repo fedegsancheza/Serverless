@@ -16,7 +16,7 @@ module.exports = {
   						//module.exports.firstPageUrl;
 		//});
 	    	browser.saveScreenshot('./tests/archivo.png')
-	    	browser.waitForElementPresent('input[name="resultado"]',20000)
+	    	//browser.waitForElementPresent('input[name="resultado"]',20000)
 		browser.setValue(mainQueryInputSelector,mainQuery)
 	    	browser.click(mainQueryButton)
 		browser.assert.containsText(mainQueryInputSelector, '4')
