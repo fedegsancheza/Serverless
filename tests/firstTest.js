@@ -5,14 +5,14 @@ module.exports = {
 	const mainQuery = '2+2'
 	var firstPageUrl = "";
         browser
-		.url(function(result) {
+		.url('https://serverless-unsj.s3.sa-east-1.amazonaws.com/index.html/');
+		//.url(function(result) {
   						// return the current url
-						console.log(result);console.log("Hola");}
+						//console.log(result);}
 		    				
   						//firstPageUrl = result.value;
   						//module.exports.firstPageUrl;
-		});
-	    	console.log(
+		//});
 	    	browser.saveScreenshot('./tests/archivo.png')
 	    	browser.waitForElementVisible('input[id="resultado"]',20000)
 		browser.setValue(mainQueryInputSelector,mainQuery)
