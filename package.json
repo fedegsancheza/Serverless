@@ -5,6 +5,7 @@
   "main": "myJavascript.js",
   "scripts": {
     "test": "nightwatch"
+    "serve": "serve"
   },
   "repository": {
     "type": "git",
