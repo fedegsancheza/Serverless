@@ -21,7 +21,7 @@ module.exports = {
             'desiredCapabilities': {
                 'browserName': 'chrome',
                 'chromeOptions': {
-                    'args': ['--headless','disable-web-security']
+                    'args': ['--headless','--disable-web-security','--disable-site-isolation-trials','--user-data-dir=%TMP%\temporary-chrome-profile-dir']
                 }
             },
             'launch_url': 'http://localhost:3000'
