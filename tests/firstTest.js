@@ -11,7 +11,7 @@ module.exports = {
 	var firstPageUrl = "";
         browser
 		//.url('https://serverless-unsj.s3.sa-east-1.amazonaws.com/index.html/');
-		.url('http://localhost:8000/index.html');
+		.url('http://localhost:3000/index.html');
 		//.url('https://google.com');
 		//.url(function(result) {
   						// return the current url
