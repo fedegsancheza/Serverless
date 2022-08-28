@@ -4,6 +4,8 @@ node_js:
 services:
   - xvfb
 script: 
+  - npm install -g node-static
+  - static -p 8000
   - xvfb-run -a npm test
 addons: 
   chrome: stable
