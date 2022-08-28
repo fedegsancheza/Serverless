@@ -19,7 +19,7 @@
   "homepage": "https://github.com/fedegsancheza/Serverless#readme",
   "devDependencies": {
     "chromedriver": "^104.0.0",
-    "nightwatch": "^2.3.3"
+    "nightwatch": "^2.3.3",
+    "serve": "^14.0.1"
   }
 }
-
