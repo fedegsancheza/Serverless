@@ -9,7 +9,6 @@ function inform() {
         var resultado=JSON.stringify(result);
         console.log(resultado);
         document.getElementById("query").value= parseInt(result.data.body,10);
-        //alert("Holi")
     }).catch(function(result){
         alert("ERROR")
     });
