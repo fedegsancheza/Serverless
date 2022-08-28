@@ -24,6 +24,7 @@ module.exports = {
                     'args': ['--headless']
                 }
             }
+            'launch_url': 'http://localhost:8000',
         }
     }
 };
