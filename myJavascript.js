@@ -6,8 +6,8 @@ function inform() {
     const obj = JSON.parse(text);
     apigClient.calcProdHelloPost({},obj,{})
     .then(function(result){
-        //var resultado=JSON.stringify(result);
-        //console.log(resultado);
+        var resultado=JSON.stringify(result);
+        console.log(resultado);
         document.getElementById("query").value= parseInt(result.data.body,10);
         //alert("Holi")
     }).catch(function(result){
