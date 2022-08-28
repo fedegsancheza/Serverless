@@ -1,6 +1,6 @@
 module.exports = {
     'Prueba Suma Calculadora'(browser) {
-       const mainQueryInputSelector = 'input[name="query"]';
+       const mainQueryInputSelector = 'input[id="query"]';
 	//const mainQueryInputSelector = 'input[name="test"]';
 	//const mainQueryInputSelector = element({
 	//	selector: 'input[name="query"]',
