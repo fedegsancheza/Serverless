@@ -23,8 +23,8 @@ module.exports = {
                 'chromeOptions': {
                     'args': ['--headless']
                 }
-            }
-            'launch_url': "http://localhost:3000",
+            },
+            'launch_url': 'http://localhost:3000'
         }
     }
 };
