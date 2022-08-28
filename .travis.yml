@@ -4,7 +4,7 @@ node_js:
 services:
   - xvfb
 before_script: 
-  - npm serve &
+  - npm run serve &
 script: 
   - xvfb-run -a npm test
 addons: 
